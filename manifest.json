@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Bandcamp Extension",
+  "version": "1.0",
+  "description": "Grants control over music via ctrl+shift+0 combination.",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "commands": {
+    "playMusic": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Space"
+      },
+      "description": "Play/pause music."
+    }
+  },
+  "manifest_version": 2
+}
